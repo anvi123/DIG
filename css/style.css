@@ -1,0 +1,153 @@
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{
+font-size: 110%; /*Bigger bold text*/
+} 
+
+
+a{
+text-decoration: none; /*Underline disabled*/
+}
+
+.section_title{
+font-family: 'Poiret One', cursive;
+}
+
+.inner{
+margin: 10px; /*Margins for inner div inside each panel*/
+margin-top: 0px;
+font-family: 'Playfair Display', serif;
+}
+
+.inner a{
+display: block;
+margin-top:0px;
+padding-left: 30px;
+color:#FFFFFF;
+padding-bottom: 3px;
+font-family: 'Poiret One', cursive;
+}
+
+#header{
+background: #000000;
+height: 100px; /*Height of header*/
+}
+
+#header h1{
+margin: 0;
+padding-top: 15px; /*Padding for the header elements*/
+color: #FFFFFF;
+font-family: 'Poiret One', cursive;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentpanel{
+margin: 0 15% 0 15%; /*Margins for content panel.*/
+}
+
+#logo{
+display:inline-block;
+}
+
+#login{  /*Login button styling*/
+border: 2px solid #009933;
+border-radius: 5px;
+background-color: #009933;
+padding:7px 15px 7px 15px;
+display: inline;
+float: right;
+margin-top: 25px;
+margin-right:30px;
+font-size: 0.6em;
+color:#FFFFFF;
+text-decoration: none;
+}
+
+#article_title{
+color:#660066;
+}
+
+#leftpanel{
+display: flex;
+float: left;
+width: 10%; /*Width of left panel*/
+height:200px;  /*Height of left panel*/
+margin-top: 50px;
+margin-left: -100%; /*fluid margin*/
+background: #009933;
+border-radius: 5px;
+align-items: center;
+justify-content: center;
+}
+
+#rightpanel{
+display: flex;
+float: left;
+width: 10%; /*Width of right panel in percentage*/
+height:200px; /*Height of right panel*/
+margin-top: 50px;
+margin-left: -10%; /*fluid margin*/
+background: #009933;
+border-radius: 5px;
+align-items: center;
+justify-content: center;
+}
+
+#rightinner{
+font-size: 1em;
+margin:0px;
+}
+
+#leftinner{
+font-size: 1em;
+margin:0px;
+}
+
+#footer{
+position:fixed; /*Sticky Footer*/
+left:0px;
+bottom:0px;
+height:40px;
+width:100%;
+background: black;
+color: #FFF;
+text-align: center;
+font-family: 'Poiret One', cursive;
+}
+
+#img1{
+float: right;
+display:inline-block;
+}
+
+/*responsive viewport*/
+
+@media (max-width: 840px){ /* responsive layout break point- drop panels to the bottom*/
+
+#leftpanel{
+float: none;
+width: 100%;
+clear: both;
+margin-left: 0;
+  }
+  
+#rightpanel{
+float: none;
+width: 100%;
+margin-left: 0;
+clear: both;
+  }
+  
+#contentpanel{
+margin-right: 0; /*Set margin to LeftColumnWidth*/
+  }
+}
